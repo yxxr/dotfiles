@@ -12,7 +12,6 @@ set nobackup
  " 入力中のコマンドをステータスに表示する
  set showcmd
 
-
  " 見た目系
  " 行番号を表示
  set number
@@ -60,4 +59,8 @@ set nobackup
  " 検索語をハイライト表示
  set hlsearch
  " ESC連打でハイライト解除
- nmap <Esc><Esc> :nohlsearch<CR><Esc>
+" nmap <Esc><Esc> :nohlsearch<CR><Esc>
+  
+ " Insetmode / normalmode　切り替え時にカーソル変更
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
