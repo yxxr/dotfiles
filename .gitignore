@@ -1,2 +1,4 @@
 vim/plugins/**
 vim/.netrwhist
+vim/plugin_manager/dein/repos/**
+vim/plugin_manager/dein/.cache/**

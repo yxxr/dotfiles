@@ -1,8 +1,8 @@
 "setting
 "文字コードをUFT-8に設定
-"set fenc=utf-8
-"" バックアップファイルを作らない
-set nobackup
+ set fenc=utf-8
+" バックアップファイルを作らない
+ set nobackup
 " スワップファイルを作らない
  set noswapfile
  " 編集中のファイルが変更されたら自動で読み直す
@@ -62,5 +62,14 @@ set nobackup
 " nmap <Esc><Esc> :nohlsearch<CR><Esc>
   
  " Insetmode / normalmode　切り替え時にカーソル変更
-  let &t_SI = "\e[6 q"
-  let &t_EI = "\e[2 q"
+ let &t_SI = "\e[6 q"
+ let &t_EI = "\e[2 q"
+ " バッファ移動
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
+if has('termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum" " 文字色
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum" " 背景色
+  set termguicolors
+endif

@@ -1,3 +1,2 @@
-" dont edit this file. 
 runtime! rc.d/init/*.vim
 runtime! rc.d/eager/*.vim

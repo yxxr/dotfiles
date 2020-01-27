@@ -1,0 +1,45 @@
+# カラースキーマ
+[[plugins]]
+repo = 'rhysd/vim-color-spring-night'
+hook_add = '''
+colorscheme spring-night
+'''
+#Git wrapper
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+#vimのステータスライン
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  set timeout timeoutlen=1000 ttimeoutlen=50
+'''
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+hook_add = '''
+'''
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+hook_add = '''
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+'''
+
+[[plugins]]
+repo = 'mattn/benchvimrc-vim'
+
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'

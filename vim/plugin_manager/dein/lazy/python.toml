@@ -1,0 +1,3 @@
+[[plugins]]
+repo = 'ryanolsonx/vim-lsp-python'
+on_ft = 'python'
